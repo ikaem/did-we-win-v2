@@ -1,0 +1,14 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fas"
+   data-icon="file"
+   class="svg-inline--fa fa-file fa-w-12"
+   role="img"
+   viewBox="0 0 384 512">
+  <path
+     d="M 24,0 C 10.7,0 0,10.7 0,24 v 464 c 0,13.3 10.7,24 24,24 h 336 c 13.3,0 24,-10.7 24,-24 -0.002,-162.66427 -9e-5,-325.34416 0.006,-488.00842923 C 189.97871,-0.00158362 189.95183,0 24,0 Z"
+     id="path42"
+     style="fill:#ffff00"/>
+</svg>

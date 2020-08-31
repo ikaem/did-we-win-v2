@@ -1,0 +1,21 @@
+.logoHome {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: var(--secondColor);
+    height: 49px;
+    padding: 0 20px;
+}
+
+.logoHome > h1 {
+    color: var(--firstColor);
+    font-size: 2.5rem;
+}
+.homeNav > ul {
+    display: flex;
+    margin-bottom: 6px;
+}
+
+.homeNav a {
+    color: var(--sixthColor);
+}

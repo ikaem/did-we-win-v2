@@ -1,0 +1,66 @@
+.matchStat {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0 10px;
+    align-items: center;
+    border-top: 1px solid #CECECE;
+    /* margin: 3px 0; */
+    padding: 3px 0;
+    font-size: 0.938rem;
+}
+.matchStat:first-child {
+    border-top: none;
+}
+.statName {
+    text-align: center;
+    color: rgb(51, 51, 51);
+}
+.matchStat:hover {
+    background-color: rgb(255, 250, 238);
+}
+
+.homeStat, .awayStat {
+    width: 100%;
+    /* background-color: red; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* padding: 0 5px; */
+    position: relative;
+}
+.homeStat {
+    justify-content: flex-start;
+}
+.awayStat {
+    justify-content: flex-end;
+}
+.homeStatValue {
+    position: absolute;
+    left: 15px;
+    color: white;
+    /* padding-bottom: 3px; */
+}
+.awayStatValue {
+    position: absolute;
+    right: 15px;
+    color: white;
+    /* color: var(--firstColor); */
+    /* padding-bottom: 3px; */
+}
+.zeroStatValue {
+    color: rgb(51, 51, 51);
+
+}
+.homeStatIncrement, .awayStatIncrement {
+    width: 10%;
+    background-color: var(--thirdColor);
+    height: 100%;
+    border-width: 0 0.1px;
+}
+.homeStatIncrement:last-child {
+    border-radius: 0 4px 4px 0;
+}
+.awayStatIncrement:nth-child(2) {
+    border-radius: 4px 0 0 4px;
+}

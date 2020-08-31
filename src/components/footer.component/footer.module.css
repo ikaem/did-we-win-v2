@@ -1,0 +1,17 @@
+.footerLinks > a {
+    /* TODO remove cursor once links active */
+    margin-right: 20px;
+    /* width: 50%; */
+}
+
+.footerSocial {
+    align-self: flex-start;
+    margin-top: 6px;
+}
+.footerSocial > a {
+    margin-left: 5px;
+}
+.footerLinks > p {
+    font-size: 0.5rem;
+    width: 100%;
+}

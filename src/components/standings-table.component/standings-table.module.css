@@ -1,0 +1,39 @@
+.standingsTable {
+    /* display: flex;
+    flex-direction: column; */
+    margin-bottom: 25px;
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+}
+
+.standingsTable > h2 {
+    background-color: #fff0c0;
+    font-weight: normal;
+    padding: 5px 20px;
+    border-bottom: 1px solid rgb(202, 183, 121);
+    color: #232323;
+}
+.table > .tableLegend {
+    border-bottom: 1px solid rgb(21, 58, 52);
+    font-size: 0.9rem;
+    color: rgb(33, 95, 85);
+    padding-bottom: 3px;
+    margin: 0 20px;
+}
+.table > li {
+    display: grid;
+    grid-template-columns: 30px auto repeat(6, 25px);
+    gap: 0 2px;
+    padding: 2px 0;
+    margin: 0 20px;
+    justify-items: center;
+    font-size: 0.938rem;
+    color: rgb(9, 27, 24);
+}
+.table > li > span:first-child, .table > li > span:nth-child(2) {
+    justify-self: left;
+    padding-left: 2px;
+}
+.table > li:nth-child(even) {
+    background-color: rgba(44, 120, 109, 0.115);
+}

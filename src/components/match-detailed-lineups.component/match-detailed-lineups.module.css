@@ -1,0 +1,101 @@
+.lineups {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 10px;
+    font-size: 0.938rem;    
+    border-left: 1px solid #e0e0e0;
+    border-right: 1px solid #e0e0e0;
+    margin-top: 5px;
+}
+
+.lineups > p:first-of-type, .lineups > p:nth-of-type(3) {
+    grid-column: 1;
+    margin-left: 20px;
+    padding: 5px 0;
+}
+.lineups > p:nth-of-type(2), .lineups > p:last-of-type {
+    grid-column: 2;
+    margin-right: 20px;
+    text-align: right;
+    padding: 5px 0;
+}
+.homeCoach, .awayCoach {
+    border-bottom: 1px solid rgb(182, 182, 182);
+}
+.lineups > span {
+    grid-column: 1/3;
+    background-color: rgb(211, 211, 211);
+    border-top: 1px solid rgb(207, 207, 207);
+    border-bottom: 1px solid rgb(202, 202, 202);
+    padding: 3px 20px;
+    text-align: center;
+    color: var(--secondColor);
+    margin: 5px 0;
+}
+
+.lineups > ul {
+    display: flex;
+    flex-direction: column;
+}
+.lineups > ul > li {
+    border-bottom: 1px solid rgb(182, 182, 182);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    align-items: center;
+}
+.lineups > ul > li > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.playerEventsIcons > svg {
+    margin-right: 5px;
+    height: 20px;  
+}
+.homeLineup > li {
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-template-rows: auto;
+    gap: 0 5px;
+}
+.homeLineup > li > span:last-child {
+    grid-column: 2;
+}
+.awayLineup > li {
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    grid-template-rows: auto;
+    gap: 0 5px;
+}
+.awayLineup > li > span:last-child {
+    grid-column: 1;
+}
+.awayLineup > li > span {
+    text-align: right;
+}
+
+.substitutes > li:last-child {
+    border: none;
+    padding-bottom: 10px;
+}
+
+
+@media screen and (min-width: 500px){
+    .homeLineup > li {
+        grid-template-columns: 20px 1fr 1fr;
+    }
+    .homeLineup > li > span:last-child {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .awayLineup > li {
+        grid-template-columns: 1fr 1fr 20px;
+    }
+    .awayLineup > li > span:last-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+}

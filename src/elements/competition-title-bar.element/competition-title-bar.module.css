@@ -1,0 +1,16 @@
+.competitionTitleBar {
+    display: flex;
+    align-items: center;
+    background-color: var(--firstColor);
+    padding: 5px 20px;
+    /* height: 41px; */
+}
+.competitionCountryFlag {
+    margin: 0 50px 0 2px;
+    width: 31px;
+    height: 21px;
+}
+.competitionTitleNameBox {
+    color: var(--secondColor);
+    text-transform: uppercase;
+}

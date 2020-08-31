@@ -1,0 +1,32 @@
+.datesNavigationView > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--thirdColor);
+    height: 31px;
+    padding: 0 20px;
+}
+.datesNavigationView li, a {
+    color: var(--sixthColor);
+}
+.datesNavigationView li:hover, a:hover {
+    color: var(--firstColor);
+}
+.datesNavigationView i {
+    cursor: pointer;
+}
+.navDateItem > span:nth-child(3) {
+    display: none;
+}
+.currentDateNav {
+    color: var(--fifthColor);
+}
+
+@media screen and (max-width: 500px) {
+    .navDateItem > span:nth-child(1), .navDateItem > span:nth-child(2) {
+        display: none;
+    }
+    .navDateItem > span:nth-child(3) {
+        display: inline;
+    }
+}
